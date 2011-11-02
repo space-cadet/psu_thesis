@@ -1,0 +1,188 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{psuthesis}
+# CIT Thesis textclass definition file. Adapted from LyX report layout.
+# Author : Ling Li <ling@caltech.edu>
+
+# Input general definitions
+Input stdclass.inc
+
+Columns 		1
+
+ClassOptions
+  Other			"draftfoot"
+End
+
+NoStyle Part*
+NoStyle Subparagraph
+NoStyle Subparagraph*
+NoStyle List
+NoStyle Address
+NoStyle Right_Address
+
+# Degree style definition
+Style Degree
+  CopyStyle		Author
+  Margin		Dynamic
+  LatexName		degreeaward
+  LabelType		Static
+  LabelString		"Degree: "
+
+  Font
+    Size		Normal
+  EndFont
+  LabelFont
+    Series		Bold
+    Size		Normal
+  EndFont
+End
+
+# CopyYear style definition
+Style CopyYear
+  CopyStyle		Degree
+  LatexName		copyyear
+  LabelString		"Copy Year: "
+End
+
+# Pubnum style definition
+Style "TechReport #"
+  CopyStyle		Degree
+  LatexName		pubnum
+  LabelString		"TechReport #. "
+End
+
+# a few changes to the abstract
+Style Abstract
+  LabelType		Top_Environment
+  ParIndent		""
+End
+
+# Dedication style definition
+Style Dedication
+  CopyStyle		Abstract
+  LatexName		dedication
+  LabelString		Dedicate
+End
+
+# Acknowledgments style definition
+Style Acknowledgments
+  CopyStyle		Abstract
+  LatexName		acknowledgments
+  LabelString		Acknowledgments
+End
+Style Acknowledgements
+  CopyStyle		Acknowledgments
+End
+
+# a few changes to the bibliography
+Style Bibliography
+  TopSep		4
+  LabelString		Bibliography
+
+  # label font definition
+  LabelFont
+    Series		Bold
+    Size		Huge
+  EndFont
+End
+
+# Numbering Algorithm floats within chapters
+Float
+  Type			algorithm
+  GuiName		Algorithm
+  Placement		tbp
+  Extension		loa
+  NumberWithin		chapter
+  Style			ruled
+  ListName		"List of Algorithms"
+  LaTeXBuiltin		false
+End
+
+# Mathematics-like definitions:
+
+Style Case
+  Margin		First_Dynamic
+  LatexType		Environment
+  LatexName	 	case
+  NextNoIndent		0
+  ParIndent		MM
+  LabelSep		xx
+  ItemSep		0
+  TopSep		0.5
+  BottomSep		0.5
+  ParSep		0
+  Align			Block
+  AlignPossible		Block, Left
+  LabelType		Static
+  LabelString		Case #.
+
+  # font & label font definition
+
+  LabelFont
+    Shape		Italic
+  EndFont
+
+End
+
+Style Corollary
+  CopyStyle		Case
+  LatexName	 	corollary
+  LabelString		"Corollary #. "
+
+  # font & label font definition
+  Font
+    Shape		Italic
+  EndFont
+
+  LabelFont
+    Shape		Up
+    Series		Bold
+  EndFont
+
+End
+
+Style Definition
+  CopyStyle		Corollary
+  LatexName	 	definition
+  LabelString		"Definition #. "
+End
+
+Style Example
+  CopyStyle		Case
+  LatexName	 	example
+  LabelString		"Example #. "
+End
+
+Style Lemma
+  CopyStyle		Corollary
+  LatexName	 	lemma
+  LabelString		"Lemma #. "
+End
+
+Style Proof
+  CopyStyle		Case
+  LatexName		proof
+  LabelString		"Proof. "
+End
+
+Style Proposition
+  CopyStyle		Corollary
+  LatexName	 	proposition
+  LabelString		"Proposition #. "
+End
+
+Style Remark
+  CopyStyle		Case
+  LatexName		remark
+  LabelString		"Remark #. "
+End
+
+Style Theorem
+  CopyStyle		Corollary
+  LatexName		theorem
+  LabelString		"Theorem #. "
+End
+
+Preamble
+EndPreamble
+
+NoStyle Case
