@@ -1,0 +1,678 @@
+%% LyX 1.6.4.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[11pt,english,aps]{book}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% style for Physical Review B and AJP are similar
+% need for subequations
+\usepackage{amsfonts}\usepackage{parskip}
+
+\input{../my_definitions.tex}
+
+\makeatother
+
+\usepackage{babel}
+
+\begin{document}
+
+\title{Introduction: Cosmological Considerations}
+
+
+\author{Deepak Vaid}
+
+
+\date{}
+
+\maketitle
+%\maketitle
+% Activate to display a given date or no date
+
+
+\tableofcontents{}
+
+
+\chapter{Cosmological Considerations}
+
+
+\section{A Brief History of Cosmology}
+
+Cosmology is one of the oldest and perhaps the grandest of human sciences.
+The word \textquotedbl{}cosmos\textquotedbl{} is commonly understood
+to represent the entire Universe. It originates from the Greek word
+for order i.e. the opposite of chaos and disorder\cite{wikipedia:Cosmology}.
+Since ancient times, across history and all civilizations the human
+mind has always been drawn to the night sky and to the order apparent
+in it. What, our curiosity compels us to ask, is the mechanism that
+causes this Order to come about, not only in our planetary sphere
+but on the scale of the stars and galaxies? Today the word {}``cosmology''
+has a somewhat narrower interpretation in terms of the study of the
+dynamics of the Universe in the language of physics and mathematics,
+but though the language might have become more structured the essential
+question remains the same.
+
+The first viable mathematical description of a cosmological model
+was possible only after the discovery of General Relativity by Albert
+Einstein\cite{Einstein:1920RelativityBook}, a framework which allows
+us to describe the motion not only of matter but also of the spacetime
+manifold in which matter lives. Even though Einstein himself, for
+personal and aesthetic reasons, was a proponent of a static universe,
+the discovery of solutions for expanding cosmological metrics by DeSitter,
+Freidmann, Le'Maitre and others pointed elsewhere. The discovery of
+the redshifting of the spectra of distant nebulae and galaxies by
+Edwin Hubble in 1920\cite{Hubble:1929PNAS} provided concrete evidence
+for an expanding universe. This discovery raised even more vexing
+questions. If the Universe is expanding in the present epoch then
+at some earlier epoch all the matter and energy must have existed
+in the form of an incredibly dense and hot Cosmic egg. This birthing
+scenario for the Universe came to be known as the {}``Big Bang''
+hypothesis\footnote{It is interesting to note that the creation myths of some religious traditions which are far older than Einstein's theories, in particular Hinduism, naturally incorporate the notion of creation and destruction of a universe and also the more recent notion of multiple universes.}
+
+The other great epistemological development in theoretical physics in the 20$^{\textrm{th}}$ century was that of the theory of Quantum Mechanics in the decades between the 1$^{\textrm{st}}$ and 2$^{\textrm{nd}}$ World Wars. As opposed to General Relativity and its offspring, Cosmology, which were built around astronomical observations, the origin of Quantum Mechanics was rooted in studies of the atomic structure of matter. Experimental and theoretical discoveries regarding the absorption and emission spectra of monoatomic gases, the molecular nature of matter as manifested in Einstein's theory of diffusion and the behaviour of particles with an inherent \textit{spin} degree of freedom, among other developments, led physicists to the a new paradigm regarding the structure of matter and radiation. Its salient features were the following:
+
+\begin{itemize}
+\item The spectrum of all radiation emitted and absorbed by atomic matter is discrete leading us back to a corpuscular picture of light \emph{a la} Newton. This also implies that the bound states of matter have discrete excitation spectra\footnote{This conclusion still holds but has less significance when considering the spectra of large collections of objects such as in solid state physics. There, as is well known, the spectrum comes in energy "bands" within each of which the spectrum can be said to be continuous because of the massive number of very closely spaced levels.}
+\item The outcomes of experiments are always probabilistic in nature with probabilities given by the modulus squared($||\Psi||^{2}$) of a \emph{complex} wavefunction $\Psi$
+\item A quantum systems can be said to be in a \emph{superposition} of some elementary (eigen)states in between observations. The resulting notion of interference between different states has no analog in classical physics.
+\end{itemize}
+
+Initially the successes of the new quantum mechanical formulation were most evident in atomic and molecular physics. The relationship between quantum and classical mechanics was formalised in the Correspondence Principle according to which the dynamics of a system must become amenable to a classical description in the limit of small $\hbar$ (i.e. weak interaction between its constituent subsystems) and/or large system size.
+
+\begin{center}
+\begin{verse}
+
+\end{verse}
+\end{center}
+
+\pagebreak 
+
+
+\subsection{Problems with FRW Models}
+
+Though Hubble's discovery provided confirmation that the large scale
+structure of the cosmos was amenable to a description within the framework
+of Einstein's General Relativity, this was merely the beginning of
+the story. It was clear that the observable universe contained a great
+deal of structure and that any cosmological model would be considered
+incomplete if it did not provide some explanation as to how these
+large-scale inhomogeneities could form. A further layer of confusion
+was added by Penzias and Wilson's (Ref ??) discovery of the cosmic
+microwave background (CMB) radiation which appeared to be isotropic
+and uniform at a temperature of $\sim3^{\circ}$ K, with negligible
+fluctuations. This radiation was the imprint of the recombination
+era, the time when the universe had cooled enough for electrons and
+protons to form hydrogen atoms. Naturally any gravitational inhomogeneities
+present at that epoch would have left a signature on the radiation
+emitted during recombination. And these same inhomogeneities constituted
+the seeds of present day large scale structure. However a simple calculation
+assuming a FRW cosmological model, shows that the structures which
+lie within our Hubble horizon ($\sim3000\, Mpc\sim10^{26}m$) could
+not have been in causal contact at $t_{rec}$. How could one reconcile
+this observation with the observed isotropy and homogeneity of the
+CMB? We also happen to live in a universe with a predominance of matter
+over anti-matter.%
+\footnote{The alternative would clearly be unsuitable not only for life but
+for any kind of stable structures such as planets and galaxies.%
+} Now the Standard Model description of elementary particles does not
+incorporate CP violation, which would be required for one form of
+matter to be predominant. What mechanism could explain this matter-antimatter
+asymmetry?
+
+
+\subsection{Inflationary Cosmology}
+
+In 1982 Alan Guth, and Vilenkin and Starobinsky in the following year,
+proposed a new paradigm for the early universe: the inflationary model.
+The elegance of this solution lay in the fact that it had the potential
+to explain all three of the above problems (horizon/flatness problem,
+structure formation and matter-antimatter asymmetry) in one stroke.
+The idea behind inflation is simple enough. As the word implies, the
+universe underwent a period of exponential growth when the scale factor
+$a(t)$ grew as $\sim e^{-H_{inf}t}$ ($H_{inf}$ is the Hubble rate
+during this era) starting from some small homogenous, isotropic patch
+of geometry. This rapid expansion would damp out any large scale geometrical
+inhomogeneities present prior to inflation, avoiding the need to fine-tune
+the matter density at early epochs, and would naturally yield the
+flat, isotropic background as characterized by the CMB, leaving only
+small density fluctuations whose amplitude ($\delta\rho/\rho\sim10^{-5}$)
+depends only on the duration of the inflationary phase. Being a non-equilibrium
+process, inflation provides the conditions necessary for CP violating
+processes to occur, which would then naturally yield an excess of
+particles over anti-particles.
+
+Despite these attractive features, the biggest obstacle to accepting
+the validity of this model was the lack of a sensible physical mechanism.
+Guth's original proposal was that of \emph{false vacuum decay}. The
+initial state of geometry is described by a quantum state that is
+trapped in the false minimum of a potential. As the temperature falls,
+the potential is lowered sufficiently to allow the state to tunnel
+out resulting in bubbles of inflationary patches to grow. This model
+however ran into trouble because the speed of expansion of these bubbles
+was insufficient to allow them to combine and reach equlibrium, resulting
+in a highly inhomogenous universe at the end of the inflationary phase,
+in conflict with the homogeneity of the CMB. The other most commonly
+adopted class of models was based on the notion of \textquotedbl{}slow-roll\textquotedbl{}.
+A scalar field can be shown to have a negative equation of state,
+the same as a positive cosmological constant and can thus drive inflation.
+In order to obtain the required duration of inflation, followed by
+a period of reheating, the potential for this scalar would in general
+have to have a very specific form determined by the so-called \textquotedbl{}slow-roll\textquotedbl{}
+conditions. The ad-hoc nature of this potential and the lack of a
+suitable scalar field in the Standard Model are the main deficiencies
+of this class of models%
+\footnote{The SM is posited to contain the U(1) Higgs axion which is supposed
+to endow particles with mass via a sponatenous symmetry breaking mechanism.
+It is unclear however if the Higgs would correspond to the inflaton
+and if so how could they be related.%
+}. In recent years, alternatives to inflation such as the ekpyrotic
+and bouncing universe scenarios have been proposed. String Theory
+has also provided fertile ground for alternatives to inflation such
+as the brane collision model (ref - Steinhardt ??). However, none
+of these alternatives has the simplicity and elegance of the inflationary
+scenario. The question then arises: can we come up with some mechanism
+which generates inflation without resorting to ad-hoc potentials or
+exotic scalar/quintessence fields which \emph{a priori} don't have
+sufficient grounding in our (reasonably complete) picture of the Standard
+Model of particles?
+
+In this thesis, we argue that a cosmological condensate which forms
+via the BCS mechanism can source inflation without resort to ad-hoc
+potentials and also provide a resolution to the cosmological constant
+problem. Venturing into the speculative realm, we also conjecture
+that such an axion would play the role of the Higgs scalar. Inflation
+has the character of a phase transition. Phase transitions in particle
+physics are generally understood within the framework of \emph{spontaneous
+symmetry breaking} (SSB). An axion with U(1) symmetry could undergo
+SSB and be responsible for both driving inflation and endowing leptons
+with mass, thus playing the role of the inflaton + Higgs.
+
+
+\section{Many-Body Phenomena}
+
+Brief intro
+
+
+\subsection{Fermi Surfaces and Topology}
+
+
+\subsection{Universality and Emergence}
+
+
+\subsection{Renormalization}
+
+
+\subsection{Band Structure}
+
+
+\subsubsection{BCS Mechanism Basics}
+
+The BCS wavefunction can be written in the Fock space representation
+as:
+
+\begin{equation}
+|\phi_{0}>=\prod_{k}\left(u_{k}+v_{k}b_{k}^{\dag}\right)|0>\label{BCS_state}\end{equation}
+
+
+
+\section{Gravitation as a Many-Body Phenomenon}
+
+In this thesis we show how a fermionic gas in a time-dependent background
+can undergo condensation and the resulting condensate can be used
+to generate inflation. Now, while this approach utilizes the notions
+of many-body physics in a gravitational background, it does not directly
+address the question of whether gravitation itself is best understood
+as many-body phenomena. A detailed analysis of this assertion is done
+in other work. Here we briefly outline the physical motivations for
+making such a claim.
+
+The simplest physical models of inflation rely on the deSitter metric:
+
+\begin{eqnarray}
+ds^{2} & = & dt^{2}-a(t)^{2}d\mathbf{r}^{2}\nonumber \\
+ & = & \frac{1}{H_{0}^{2}\eta^{2}}(d\eta^{2}-d\mathbf{r}^{2})\end{eqnarray}
+
+
+where $a^{-1}(\eta)=H_{0}\eta$ {[}check and fix details ...{]} and
+$\eta\in[-\infty,0]$. In these models the gravitational background
+is taken as a given in terms of some prescribed metric such as in
+\ref{eqn:deSitterMetric} or some version thereof, coupled to some
+matter field $\phi$\;%
+\footnote{which satisfies the negative energy equation of state: $w=-1$%
+} with a potential $V(\phi)$. The search for viable models of inflation
+has generally involved finding good candidates for the matter fields
+and the corresponding potentials. Any such model of inflation will
+necessarily be only a poor approximation to a more complete picture
+of quantum gravity where matter and gravitational degrees of freedom
+are treated in a unified manner.
+
+In these approaches to inflation one fundamental aspect of general
+relativity is ignored - that gravity describes a system with precisely
+two degrees of freedom at each point of space-time. This is most easily
+via the ADM formulation of GR wherein we find that Einstein's equations
+can be expressed as a sum of constraints. The Ricci curvature tensor
+$R_{\mu\nu}$ in D dimensions has $N=(D-2)(D-1)/2$ {[}cite Wald,
+Appendix 2{]} degrees of freedom. For D=4, this yields N=6. We have
+four constraint equations (one from the scalar and three from the
+diffeomorphism constraint) giving us two free degrees of freedom at
+each point of a 3+1 dimensional background. In light of this observation
+the picture that comes to mind is that of a spin-system such as those
+encountered in condensed matter models. If we were to proceed under
+the assumption that such an analogy has more than merely formal content,
+then one can immediately export the tremendous insights gained from
+condensed matter physics to the gravitational arena.
+
+In such a framework the gravitational variables such as the scale
+factor $a(t)$ and the corresponding conjugate momenta $\dot{a}(t)$
+are best understood as coarse-grained expectation values of local
+operators defined on the spin-system, in the same manner as the magnetization
+in the Ising model corresponds to the average of the spins at all
+sites of the given lattice. The exponential growth of the scale factor
+in inflationary scenarios can then be interpreted as corresponding
+to the divergence of the correlation lengths of order parameters near
+a critical point in a spin-system. This point of view is also in concordance
+with the picture emerging from studies of quantum geometry where the
+spatial manifold is replaced by discretized structures called \emph{spin
+networks} whose edges are labeled by spins and vertices are labeled
+by so-called \emph{intertwiners} - which live in the space of linear
+operators $\mathcal{I}:\bigotimes\limits _{i\in[1..n]}\mathcal{H}_{j_{i}}\rightarrow{\rm {C}}$
+where $\{j_{i}\}$ are the spin labels of the edges incident on that
+vertex. If one asked a condensed matter physicist what this picture
+reminds them of, the immediate answer would be: the Ising model !.
+Or one could ask a lattice QCD expert and they would remark on this
+model's similarity to their own work. After all the action for Yang-Mills
+theory - which with gauge group $SU(3)$ is used to model the strong
+interaction - is:
+
+\begin{equation}
+S_{QCD}=\int dtd^{3}x\, Tr[F_{\mu\nu}^{IJ}F^{\mu\nu\, KL}\sigma_{IJ}\sigma_{KL}]\end{equation}
+
+
+where $\sigma_{IJ}$ are the generators of the relevant gauge group
+($SU(3)$ for QCD) and $F_{\mu\nu}^{IJ}$ is the curvature of the
+gauge field. This action the same essential structure as the action
+for gravity. We elaborate with some mathematics:
+
+Following Smolin \cite{Smolin2002Quantum}, we have for the Hamiltonian
+constraint for GR with positive $\Lambda$:
+
+\begin{equation}
+\mathcal{H}_{deS}=\epsilon_{ijk}E^{ai}\left(F_{ab}^{k}E^{bj}-\frac{\Lambda}{3}\epsilon_{abc}E^{bj}E^{ck}\right)=0\label{eqn:deSitterHamiltonian}\end{equation}
+
+
+We would like to point the formal similarity between this equation
+and the hamiltonian for condensed matter systems, in particular the
+spin-ice model, where our degrees of freedom are spins $S_{i}$ placed
+at the vertices of a hexagonal lattice ${}^{\star}\mathcal{L}$. The
+dual $\mathcal{L}$ of this lattice is a triangular lattice. The spins
+can also be seen as being located on the faces of $\mathcal{L}$.
+This makes sense from the quantum geometry framework where the area
+operator of a surface is the Casimir $J^{2}$ of a system of spins
+$j_{i}$ labeling each point on the surface $p_{i}$ which is pierced
+by a loop carrying a flux of the gravitational connection. For this
+to work however, we must dimensionally reduce \ref{eqn:deSitterHamiltonian}
+which \emph{a priori} is the Hamiltonian of a system in three dimensions.
+This can be done by considering a foliation of the three dimensional
+space with two dimensional sheets. We can fix a gauge in which $E^{0i}=n^{i}$
+is the normal to these two dimensional surfaces. Then the first term
+in \ref{eqn:deSitterHamiltonian} becomes:
+
+\begin{eqnarray}
+\mathcal{H}_{1} & = & \epsilon_{ijk}E^{ai}E^{bj}F_{ab}^{k}\nonumber \\
+ & =\end{eqnarray}
+
+
+The deSitter Hamiltonian $\mathcal{H}_{deS}$ can then be interpreted
+as being the sum of the terms corresponding to the kinetic energy
+and the nearest neighbor, two and three body interaction energies
+of spins $E^{ai}$ placed at the vertices of the hexagonal lattice
+(${}^{\star}\mathcal{L}$). The two and three body interaction energies
+are:
+
+\begin{equation}
+\mathcal{E}_{2}=\sum F_{ij}^{ab}E_{a}^{i}E_{b}^{j};\qquad\mathcal{E}_{3}=-\frac{\Lambda}{3}\sum\epsilon_{ijk}\epsilon^{abc}E_{a}^{i}E_{b}^{j}E_{c}^{k}\label{eqn:nBodyEnergy}\end{equation}
+
+
+where $i,j,k$ label vertices in $^{\star}\mathcal{L}$ and $a,b,c$
+label the possible states of each spin variable. From the form of
+the above equations it is clear that the {}``spins'' in this case
+have to live in a three-dimensional hilbert space $H_{3}$. The two-body
+interaction term contains the kinetic energy term which is given by:
+
+\begin{equation}
+E_{kin}=\frac{1}{2}\sum_{i}F_{ii}^{ab}E_{a}^{i}E_{b}^{i}\label{eqn:kinTerm}\end{equation}
+
+
+The remaining components of the two-body term can be interpreted as
+exchange energies:
+
+\begin{eqnarray}
+E_{exch} & = & \sum_{i\neq j}F_{ij}^{ab}E_{a}^{i}E_{b}^{j}\label{eqn:exchTerm}\\
+ & = & \frac{1}{2}\sum_{i}\sum_{j>i}F_{ij}^{ab}\left(E_{a}^{i}E_{b}^{j}\pm E_{a}^{j}E_{b}^{i}\right)\end{eqnarray}
+
+
+where the sign in the last term determines the statistics the particles
+$E_{a}^{i}$ obey under exchange.
+
+When restricted to a 2D space, in addition to fermionic and bosonic
+statistics we can have anyonic statistics, i.e. exchanging two identical
+objects can lead to a phase change of $e^{\imath\theta}$. The exchange
+term should then be written as:
+
+\[
+^{2D}E_{exch}=\frac{1}{2}\sum_{i}\sum_{j>i}F_{ij}^{ab}\left(E_{a}^{i}E_{b}^{j}+e^{\imath\theta}E_{a}^{j}E_{b}^{i}\right)\]
+
+
+where the anyon phase factor is included.
+
+
+\subsection{The Cosmological Constant term in Field Theory}
+
+While the most concrete evidence for a non-zero $\Lambda$ has come
+from astronomical observations, one can also investigate this question
+from the perspective of local QFT and/or candidates for theories of
+Quantum Gravity (QG) such as LQG and String Theory. But first, let
+us consider the simple case of the quantum harmonic oscillator.
+
+One of the most striking results of early quantum mechanics was Dirac's
+quantization of the harmonic oscillator hamiltonian is the energy
+eigenstate basis. The resulting hamiltonian becomes:
+
+\begin{equation}
+\hat{H}=\hbar\omega\sum_{\vect{k}}\left(a_{\vect{k}}^{\dagger}a_{\vect{k}}+\frac{1}{2}\right)\end{equation}
+
+
+where $\omega$ is the characteristic frequency of the given oscillator.
+This expression might seem passe to most physicists, having encountered
+it one too many times in the literature. However, let's rewrite it
+as:
+
+\begin{equation}
+\hat{H}=\hat{H}_{kin}+\hat{H}_{\Lambda}=\left(\hbar\omega\sum_{\vect{k}}a_{\vect{k}}^{\dagger}a_{\vect{k}}\right)+\left(\sum_{\vect{k}}\frac{1}{2}\hbar\omega\right)\end{equation}
+
+
+It is clear that the second term $\hat{H}_{\Lambda}$ is a divergent
+sum, at least for a free harmonic oscillator. This is referred to
+as the \emph{zero-point energy} and arises due to the commutation
+relations of the ladder operators. Its presence clearly indicates
+a difficulty. The ground state of a SHO is characterised by a divergent
+energy term. In practice, this term is considered a minor annoyance
+as in any physical observation it is the energy \emph{difference}
+between two states that is measured, and can therefore be ignored
+for all practical purposes (FAPP). This is no longer the case when
+gravity is included in the picture. These \textquotedbl{}zero-point\textquotedbl{}
+fluctuations will now contribute to the expectation value $\expect{T_{\mu\nu}}$
+of the stress-energy tensor and hence lead to metric perturbations
+which can no longer be neglected. In general, due to the interaction
+of matter and geometry as codified by the equivalence principle, any
+matter fields will receive some non-zero correction to their self-energy
+in a given background metric. In principle this is a good thing. It
+should regulate the divergent sums as found above in $\hat{H}_{\Lambda}$
+by modifying the dispersion relation at high momenta.
+
+What we refer to as the cosmological constant from the perspective
+of QFT is precisely the zero-point contribution to the vacuum energy
+from all Standard Model matter fields. This contribution ($\hat{H}_{SM}$)
+would constitute the $T_{00}$ term of the vacuum stress-energy tensor
+and the solution of the Einstein equations is deSitter spacetime with
+$\Lambda_{SM}=\expect{\hat{H}_{SM}}$. $\Lambda_{SM}$ would also
+act as a natural momentum cutoff for integrals in the SM.
+
+So far we have not encountered any contradictions. Matter quantum
+fields have a divergent zero-point energy. This energy should play
+the role of a positive $\Lambda$ when gravity is included in the
+picture and should act as a momentum cut-off thereby regulating divergences
+in the field theory. Seen this way, gravity is nature's way of keeping
+vacuum fluctuations in check {[}refer to Smolin's 1985 paper on BH
+as natural regulators of QFT{]}.
+
+However, the ratio of the CC as obtained from WMAP3 and other cosmological
+observations ($\Lambda_{obs}$) happens to be smaller than that calculated
+from SM fields ($\Lambda_{SM}$) by a factor of about $10^{-120}$.
+What is the explanation for this massive discrepancy? Regardless of
+its origin, this number points to a lack of knowledge about the SM
+and/or a quantum theory of gravity. In the 1960s, theorists realized
+that the mechanism of supersymmetry could alleviate the problem somewhat.
+In this picture every SM particle has a supersymmetric dual whose
+vacuum fluctuations are of opposite sign as those of the original
+particle. This leads to a partial cancellation when computing $\Lambda_{SM}$.
+The magnitude of the problem is then reduced but the ratio $\Lambda_{obs}/\Lambda_{SM}$
+still remains a gargantuan $10^{-60}$. Also the inclusion of SUSY
+raises more questions. Since we don't observe SUSY particles in nature
+and none have so far been found in high energy experiments%
+\footnote{Though it is believed that the spectrum of high energy cosmic rays
+might be due to decaying relic SUSY particles%
+}, we need a mechanism to break SUSY at some point before the radiation
+era. Also if SUSY is broken then it is hard to see how it could effect
+the CC problem in the present epoch. By itself, SUSY is another beautiful
+symmetry of nature and will likely be observed at some point either
+in the LHC or perhaps in the realm of condensed matter physics.%
+\footnote{This is, of course, a very simplified summary of the actual picture.
+In QFT $\expect{H_{SM}}$ corresponds to the one-loop energies of
+all the possible SM interaction vertices. However, the physical essence
+of the reasoning presented above remains the same.%
+}
+
+Insert para about how it is $G_{N}^{2}\Lambda_{SM}$ and not $G_{N}$
+which determines the strength of the coupling between matter fields
+and gravity. As it so happens, in the proper units, $G_{N}^{2}\Lambda_{SM}\sim10^{120}\Lambda_{obs}$.
+How does this factor into the picture ???
+
+Of course, one might ask if it even makes sense to compare two quantities
+associated with vastly different scales: $\Lambda_{SM}$ corresponding
+to the scale of electroweak theory ($\sim10^{-15}m$) and $\Lambda_{obs}$
+corresponding to the scale of CMB horizon ($\sim10^{26}m$). Assuming
+that the large-scale structure of geometry can be described by a condensate,
+such a comparison becomes essentially meaningless. We know from our
+knowledge of many-body physics that fluctuations above the correlation
+length of a condensate are strongly suppressed relative to microscopic
+scales. If we wish to adopt this perspective, then we must explain
+how such a condensate can form and how its correlation length comes
+to exceed the range of the weak force. One might speculate that given
+a reasonably complete picture of condensate formation the second question
+might be answered naturally. In this thesis, we outline the first
+steps towards such a complete picture.
+
+
+\subsection{Elements of LQG}
+
+There are two principle approaches to the problem of reconciling gravitational
+physics with quantum theory. The first is String Theory (ST) which
+is founded around the study of excitations of extended objects - strings
+and higher dimensional branes - embedded in a flat spacetime. The
+second is Loop Quantum Gravity (LQG) which attacks the problem from
+a different perspective, one that seeks to preserve the principle
+feature of general relativity - background independence. Here the
+notion is that by quantizing around a flat background - as is done
+in ST - we sacrifice background independence and then there is no
+guarantee that the resulting theory can correctly describe the quantum
+fluctuations of geometry especially in the strong-field regime.
+
+The principle obstacle to covariant quantization approaches was the
+non-renormalizability of the gravitational action, a problem rendered
+even more difficult due to its non-quadratic form. The Einstein-Hilbert
+action is:
+
+\begin{equation}
+S_{EH}=\int d^{4}x\sqrt{-g}\mathcal{R}\label{eqn:EinsteinHilbert}\end{equation}
+
+
+where $\mathcal{R}$ is the Ricci scalar and $g$ is the determinant
+of the metric element. One can see that due to the non-polynomial
+nature of this action ...
+
+
+\section{Cosmological Condensates}
+
+
+\section{WMAP - New eyes upon the Cosmos}
+
+As mentioned above, Einstein introduced the $\Lambda$ parameter %
+\footnote{For obvious reasons, we feel that the \textquotedbl{}cosmological
+constant\textquotedbl{} not truly being a \emph{constant} deserves
+a different designation%
+} in order to fulfill his aesthetic vision of a static universe. After
+observations ruled out a static universe the $\Lambda$ term faded
+into obscurity until astronomical observations in the latter half
+of the 20th century provided evidence for an accelerating universe.
+The most recent and precise of these observations have come from the
+Wilkinson Microwave Anisotropy Probe or WMAP for short. The results
+from WMAP3%
+\footnote{the suffix '3' denoting the latest data run%
+} and measurements of supernovae, galaxy redshift surveys and large-scale
+structure surveys such as SDSS are all consistent with a $\Lambda$CDM
+cosmological model - suggesting a universe dominated by dark energy
+in the form of $\Lambda$ and cold dark matter (CDM), with hot baryonic
+matter constituting only about $10\%$ of the present day matter density%
+\footnote{the recent observations of the ballistic collision of two galaxies
+in the Bullet Cluster seems to have answered in the affirmative the
+question of the \emph{existence} of dark matter%
+}.
+
+The Friedmann equations (\ref{eqn:Friedmann}) contains the following
+constants: $G,\Lambda,k$ and the variable quantities are $a(t),\dot{a}(t)$
+or their combinations $a(t)/\dot{a}(t)\sim H$. How do we determine
+the values of these quantities from experiment and observation? Many
+experiments {[}citations{]} have determined the value of $G$ to be
+$\sim6.67\times10^{-7}Nm^{2}/kg^{2}$. However most of these have
+been earth-based. Recent studies have suggested that one way to look
+at the $\Lambda$ problem is by allowing $G$ to vary on cosmological
+scales {[}cite: vafa et al?{]}. They call this phenomenon over-damping
+{[}??{]}. But in order to determine the correct extension of GR which
+would incorporate this idea, we have to test the limits of the validity
+of simple cosmological model given by (\ref{eqn:Friedmann}) with
+constant $G,\Lambda$ and $k$. A viable inflationary model ends up
+in a Friedmann universe within a radiation background with some finite,
+pseudo-constant values for these parameters, because that is the state
+compatible with the CMB. From that point on cosmological evolution
+on different scales decouples due to gravitational collapse and thereafter
+the large scale evolution of the universe can to some extent be described
+independently of the structure-formation processes occurring at smaller
+scales.
+
+
+\section{Beyond the Standard Model}
+
+
+\subsection{Topological Defects and Vacuum Energy}
+
+By now it is generally accepted that topological considerations will
+play a major role in any theory of Quantum Gravity. The course of
+development of theoretical physics over the 20$^{\text{th}}$ coincides
+with attempts to generalize the goemetrical framework which undergirds
+particles and their interactions. First the Special and then the General
+Theory of Relativity extended the backdrop for physical phenomena
+from Galilean to a Lorentzian and finally to a pseudo-Riemannian manifold.
+The realization that geometry is itself dynamical lead to efforts
+by Kaluza-Klein, Einstein, Weyl and others to construct a field theory
+incorporating gravity and electromagnetism. In fact Weyl was lead
+to the first formulation of the gauge principle in theoretical physics
+through his attempt at unification.
+
+These early considerations generally did not consider the role that
+topology might play in unifying matter and geometry. A notable exception
+was the work by Einstein and Rosen \cite{Einstein1935Particle}. Though
+most often cited in reference to {}``Einstein-Rosen'' bridges (wormholes),
+the intent behind the work had nothing to do with wormholes, but with
+constructing a singularity free solution of general relativity which
+naturally incorporated matter. To cite from the abstract:
+\begin{quote}
+... These solutions involve the mathematical representation of physical
+space by a space of two identical sheets, a particle being represented
+by a {}``bridge'' connecting these sheets ... 
+\end{quote}
+In the absence of concrete physical predictions and a lack of theoretical
+interest this model of elementary particles as spacetimes with non-trivial
+topology was forgotten. It was revived later in the form of the {}``wormhole''
+solution which could conceivably be a model for travel between two
+different and vastly separated regions of space {[}?cite visser etc.{]}
+
+
+\subsection{The Braided Universe}
+
+In 2006 Sundance Bilson-Thompson proposed that the particles of the
+Standard Model (SM), or at least those in the first generation: the
+leptons consisting of the electron, electron-neutrino and the up and
+down quarks and the gauge bosons ($W^{\pm}$, $Z_{0}$, $\gamma$)
+could be given a unified representation in terms of the irreducible
+elements of the first non-trivial braid group ($B_{3}$).%
+\footnote{To be precise, he used an enlargement of the braid group. Physically
+this consists of replacing the 1D threads of the braid with 2D ribbons
+which can then contain twists (or orientation). Mathematically this
+is the product group $\tilde{B}_{3}=B_{3}\times Z_{2}$ - i.e. the
+product of the simplest abelian and the simplest non-trivial braid
+group.%
+}
+
+He then showed that the irreducible elements of $\tilde{B}_{3}$ can
+be put into one-to-one correspondence with (at least) the first generation
+of the SM particles in a very natural manner. Despite the elegance
+of the construction - for instance all particles have left and right-handed
+representations, except for the neutrino which comes in only one handedness
+- some significant physical questions remained unanswered in \cite{BilsonThompson2006Quantum}.
+In the following we elaborate on these missing pieces.
+
+LQG and String Theory both remain a few steps away from giving a coherent
+description of quantum gravity which naturally incorporates the particles
+of the SM - i.e. the so-called goal of \textquotedbl{}Unification\textquotedbl{}.
+However, we have obtained a very good notion of what the final picture
+should look like from the advances in the respective fields. In fact
+now we are faced with a convergence of two supposedly clashing approaches.
+Critics of String Theory point to its lack of a natural habitat for
+the SM and its many solutions constituting an embarrasment of riches
+that is yet to be tamed. However, String Theory is more like a tree
+than the idea of one. It doesn't have one indisputable conclusion
+or equation, but a plethora of very compelling ideas%
+\footnote{Put in examples - such as the Born-Infeld action, String Condensation,
+?-Dualities which can prossibly explain the hierarchy problem etc.%
+} which, it is safe to say, will emerge naturally in the final analysis.
+Likewise the main weakness of LQG (in my opinion), its lack of a particle
+spectrum, does not diminish the validity of the physical implications
+of quantum geometry%
+\footnote{e.g. BH entropy, quantized area and volume operators, non-commutative
+spacetime - which incidentally has also been encountered in String
+Theory {[}?cite alexander's paper on non-commutative inflation%
+}.
+
+Given this abundance of theoretical evidence, it is clear that any
+notion of particles as topological structures should find a natural
+home in LQG and String Theory, for instance the manner in which Ehrenfest's
+theorem allows us to make a correspondence between the time evolution
+of quantum expectation values and that of classical phase space variables.
+
+Now, at least at a purely visual level, the braid picture seems to
+be in concordance with the structures that are natural in both LQG
+and ST - Spin-networks whose 1D edges can braid around each other%
+\footnote{Indeed, Yidun Wan showed that this process allows us to implement
+Bilson-Thompson's picture in LQG - however, not perfectly%
+} on the one hand, and 1D strings and higher dimensional brane-like
+structures on the other. Unfortunately, this visual similarity begins
+and ends at the purely speculative level and can only guide us to
+the final answer. It has yet to be shown how to correctly embed ribbon-like
+structures in LQG%
+\footnote{It is the author's prejudice that ST and LQG are not descriptions
+of nature at the same scale. Instead ST is in some ways a semi-classical
+cousin of LQG. Thus in the following we will stick with LQG and hope
+to be able to revisit the connection with ST at a later point%
+}. Smolin has shown \cite{Smolin2002Quantum} that in LQG with a positive
+$\Lambda$, for technical reasons, we are required to use framed ribbons
+instead of 1D curves as the edges of our spin-networks. Taking the
+idea further, in \cite{Smolin1995Linking}, he constructed a picture
+which has very strong resemblance to the one we present here. If Bilson-Thompson
+had written his paper 10 years ago, then concievably Lee Smolin might
+have completed the construction long ago. In fact, the author was
+unaware of \cite{Smolin1995Linking} until late into this investigation.
+However the striking parallels, give us greater faith in the validity
+of this construction and also provide a good place for jumping into
+the mathematical details in the following.
+
+\bibliographystyle{../psuthesis}
+\bibliography{../thesis}
+
+\end{document}

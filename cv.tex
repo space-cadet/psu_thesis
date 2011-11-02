@@ -1,0 +1,204 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Deepak Vaid}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {physics, gravity, cosmology, quantum field theory},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  A-16, 1st Floor (East Facing) \\
+  South Extension, Part II \\
+  New Delhi - 110049 \\
+  India
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & +91-9717275953 (Cell) \\
+     &  +91-11-65363116 (Landline)\\
+    Email: & \href{mailto:dvaid79@gmail.com}{\tt dvaid79@gmail.com} \\
+    Homepage: & \href{http://www.phys.psu.edu/people/display/index.html?person_id=1861}{\tt Link} \\
+  \end{tabular}
+\end{minipage}
+
+
+\section*{Personal}
+
+\begin{itemize}
+\item Citizen of India
+\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item B.S. Physics, University of Missouri at Rolla\footnote{now known as Missouri University of Science and Technology }, 2000--2003
+  \item Ph.D. Physics, Pennsylvania State University, 2003--2011, (defended Nov. 2010, completion Oct. 2011)
+\end{itemize}
+
+
+\section*{Research Experience}
+
+\subsection*{Doctoral Research}
+\begin{itemize}
+\item \textbf{Independent study}, Advisor: Prof. Abhay Ashtekar, Topic: \emph{Geometric Quantum Mechanics}; Pennsylvania State University, (2004--2005)
+\item \textbf{Independent study}, Advisor: Prof. Martin Bojowald; Pennsylvania State University, (2005--2006)
+\item \textbf{Thesis research}, Advisor: Prof. Stephon H. S. Alexander, Pennsylvania State University, (2006--2010). Research topics covered include:
+\begin{enumerate}
+\item Studying the effects of LTB metric on anisotropies of the Cosmic Microwave Background using WMAP3 data
+\item Applying Markov Chain Monte Carlo (MCMC) to obtain likelihood for Cosmological model fits to WMAP3 data.
+\item Condensation of fermions in a cosmological setting
+\item Generating Inflation from Condensates
+\item Cosmological Parameter Extraction from WMAP3 data via Bayesian Analysis 
+\end{enumerate}
+\end{itemize}
+
+\subsection*{Undergraduate Research}
+\begin{itemize}
+\item University of Missouri at Rolla, 2000--2003
+\item Advisor: Prof. Donald Madison
+\item Numerical Calculation of Ionization Cross-Sections of Noble Gases 
+\end{itemize}
+
+\section*{Publications}
+
+\begin{itemize}
+\item Gravity Induced Chiral Condensate Formation and the Cosmological Constant (with. S. Alexander), 2006, \href{http://www.arxiv.org/hep-th/0609066}{arXiv:hep-th/0609066}
+\item A fine tuning free resolution of the cosmological constant problem (with S. Alexander), 2007, \href{http://www.arxiv.org/hep-th/0702064}{arXiv:hep-th/0702064}
+\item Local Void vs Dark Energy: Confrontation with WMAP and Type Ia Supernovae (with S. Alexander, T. Biswas and A. Notari), 2008, \href{http://www.arxiv.org/abs/0712.0370}{arXiv:abs/0712.0370}
+\item Embedding the Bilson-Thompson model in an LQG-like framework, 2010, \href{http://www.arxiv.org/abs/1002.1462}{arXiv:abs/1002.1462}
+\item Loop Quantum Gravity for the Bewildered, (with S. Bilson-Thompson), 2011, In Progress
+\item Elementary Particles as Gates for Universal Quantum Computation, 2011, In Progress
+\item The Quantum Hall Effect and Black Hole Entropy, 2011, In Progress.
+\item Anti-DeSitter Condensates as Black Hole Interiors, 2012, In Progress.
+\end{itemize}
+
+\section*{Talks, Seminars}
+\begin{itemize}
+	\item \emph{Elementary Particles as Gates for Universal Quantum Computation}, Mehta Research Institute, Allahabad, India, April 7, 2010
+	\item \emph{Elementary Particles as Gates for Universal Quantum Computation}, Center for High Energy Physics, Indian Institute of Science, Bangalore, India, April 21, 2010
+	\item \emph{Loop Quantum Gravity for the Bewildered}, Physics Department, University of Adelaide, Adelaide, Australia, August 19, 22 and 29, 2011
+\end{itemize}
+
+\section*{Teaching Experience}
+\begin{itemize}
+	\item \textit{Teaching Assistant}, Pennsylvania State University, 2003--2007, duties included 
+	\item \textit{Physics Tutor}, University of Missouri at Rolla, 2000--2002, Duties:
+\end{itemize}
+
+\section*{Computational Skills}
+
+\begin{itemize}
+	\item \emph{Proficient in:} C++ \& Python programming, \LaTeX, Mathematica
+	\item \emph{Platforms:} Microsoft Windows, Apple OS X, Ubuntu Linux
+	\item \emph{Familiar with:} Matlab, SAGE
+%	\item \emph{Projects:}
+%	\begin{enumerate}
+%		\item Numerical Computations on Clusters. 
+%	\end{enumerate}
+\end{itemize}
+
+%\subsection*{Current Projects}
+%
+%\begin{enumerate}
+%\item \textbf{Particles as topological structures in quantum gravity}: In a recent paper (\href{http://www.arxiv.org/abs/1002.1462}{arXiv.org:abs/1002.1462}) I have shown one can embed the Bilson-Thompson braid model of elementary particles in a spin-network like framework.
+%\item \textbf{Tetrad Condensation}: The action for General Relativity can be cast into a simple form called the Quadratic Spinor Lagrangian. In this form, it becomes manifest that one can treat the tetrad fields as fermionic matter variables. The presence of a non-zero positive cosmological constant term provides the four-fermionic interaction term necessary for the formation of "cooper pairs" which then play the role of atoms of geometry in a theory of quantum gravity (\emph{work in progress})
+%\item \textbf{deSitter Hamiltonian and Spin Systems}: The hamiltonian for gravity with non-zero $\Lambda$ (i.e. the deSitter solution) in the connection formulation can be shown to have the same form as the hamiltonian of a spin-system, when we treat tetrads as spins (\emph{work in progress})
+%\item \textbf{The Computational Universe}: There exist deep connections between computational and physical law. Recent work on quantum computation and information theory has only made the question more urgent. In the above mentioned paper (\href{http://www.arxiv.org/abs/1002.1462}{arXiv.org:abs/1002.1462}) it was shown that the braid model of elementary particles can be embedded in a spin-network like framework. This combined with the observation by Lomonaco and Kauffmann (\href{http://www.arxiv.org/quant-ph/0401090}{arXiv:quant-ph/0401090}) that the elements of the braid group $B_3$ form a set of universal gates for quantum computation, lead us to a concrete theoretical model of the \emph{Computational Universe} hypothsis.  (\emph{work in progress})
+%\end{enumerate}
+
+\section*{References}
+
+\begin{itemize}
+	\item \href{http://www.adelaide.edu.au/directory/sundance.bilson-thompson}{Sundance Bilson-Thompson}, Ramsay Postdoctoral Fellow, School of Chemistry and Physics, University of Adelaide, sundancebt@gmail.com
+	\item \href{http://www.phys.psu.edu/~jain/}{Jainendra K. Jain}, Erwin W. Mueller Professor of Physics, Pennsylvania State University, PA, USA, jain@phys.psu.edu
+	\item \href{http://www.haverford.edu/faculty/salexand}{Stephon Alexander}, Associate Professor of Physics, Haverford College, Haverford, PA, USA, salexand@haverford.edu
+	\item \href{http://www.phys.psu.edu/people/display/index.html?person_id=417}{Martin Bojowald}, Associate Professor of Physics, Pennsylvania State University, PA, USA, bojowald@gravity.psu.edu
+\end{itemize}
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
